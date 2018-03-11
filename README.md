@@ -11,16 +11,16 @@ npm install styled-transition-group-animation -S
 ```js
 <TransitionGroup>
     {this.props.items.map((item) => (
-    <Transition key={item} type="fade" duration={1000}>
-
-      <div>
-        <h6>{item}</h6>
-      </div>
-
-    </Transition>
+        <Transition key={item} type="fade" duration={1000}>
+    
+          <div>
+            <h6>{item}</h6>
+          </div>
+    
+        </Transition>
     ))}
 </TransitionGroup>
 ```
 
 ### Storybook Link
-https://sanderv1992.github.io/Styled-Transition-Group/public/storybook/
+[https://sanderv1992.github.io/Styled-Transition-Group/public/storybook/](https://sanderv1992.github.io/Styled-Transition-Group/public/storybook/)
