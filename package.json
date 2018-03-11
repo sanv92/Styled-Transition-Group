@@ -1,15 +1,29 @@
 {
-  "name": "styled-transition-group",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "name": "styled-transition-group-animation",
+  "version": "1.0.3",
+  "description": "Generate animation width styled-components and react-transition-group's CSSTransition",
+  "main": "dist/index.js",
   "scripts": {
     "build:storybook": "build-storybook -c .storybook -o ./public/storybook",
     "dev:storybook": "start-storybook -p 3006 -s ./src -c .storybook",
+    "build": "babel -d dist src",
     "test": "npm run test:eslint",
     "test:eslint": "eslint ./src"
   },
-  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SanderV1992/Styled-Transition-Group.git"
+  },
+  "keywords": [
+    "react-transition-group",
+    "CSSTransition",
+    "transition",
+    "animation",
+    "animate",
+    "styled-components"
+  ],
+  "author": "sv92",
+  "license": "ISC",
   "devDependencies": {
     "@atomix/eslint-config": "^6.1.1",
     "@atomix/eslint-config-react": "^6.1.1",

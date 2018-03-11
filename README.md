@@ -4,7 +4,7 @@ Generate animation width styled-components and react-transition-group's CSSTrans
 
 ## Getting Started
 ```sh
-npm install @dtdstudio/styled-transition-group -S
+npm install styled-transition-group-animation -S
 ```
 
 ## Examples
