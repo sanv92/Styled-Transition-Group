@@ -1,4 +1,4 @@
-# Styled Transition Group
+# Styled Transition Group Animation
 
 Generate animation width styled-components and react-transition-group's CSSTransition
 
