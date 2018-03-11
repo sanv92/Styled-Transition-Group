@@ -1,6 +1,6 @@
 {
   "name": "styled-transition-group-animation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate animation width styled-components and react-transition-group's CSSTransition",
   "main": "dist/index.js",
   "scripts": {
