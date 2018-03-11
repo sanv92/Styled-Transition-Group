@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:storybook": "build-storybook -c .storybook -o ./public/.storybook",
+    "build:storybook": "build-storybook -c .storybook -o ./public/storybook",
     "dev:storybook": "start-storybook -p 3006 -s ./src -c .storybook",
     "test": "npm run test:eslint",
     "test:eslint": "eslint ./src"
