@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "styled-name",
+    "transform-object-rest-spread",
+    "transform-export-extensions",
+    "transform-class-properties",
+    "syntax-dynamic-import",
+    "transform-async-to-generator"
+  ],
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ]
+  ]
+}

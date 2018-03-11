@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "extends": "@atomix/react",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "unicorn/filename-case": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "../node_modules",
+          "./"
+        ]
+      }
+    }
+  }
+}
