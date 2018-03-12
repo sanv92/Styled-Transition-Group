@@ -16,7 +16,7 @@ const propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['fade', 'zoom', 'rotate', 'roll']),
   duration: PropTypes.number,
 }
 

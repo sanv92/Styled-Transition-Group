@@ -7,7 +7,9 @@
     "build:storybook": "build-storybook -c .storybook -o ./public/storybook",
     "dev:storybook": "start-storybook -p 3006 -s ./src -c .storybook",
     "build": "babel -d dist src",
-    "test": "npm run test:eslint",
+    "test": "npm run test:jest && npm run test:eslint",
+    "test:jest": "jest ./src",
+    "test:jest:watch": "npm run test:jest -- --watch",
     "test:eslint": "eslint ./src"
   },
   "repository": {
@@ -33,6 +35,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.2",
     "babel-plugin-styled-name": "^1.0.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -45,19 +48,29 @@
     "babel-plugin-transform-react-pure-class-to-function": "^1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.18.0",
+    "eslint-config-react-app": "^2.1.0",
     "eslint-import-resolver-node": "^0.3.1",
     "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-flowtype": "^2.46.1",
     "eslint-plugin-import": "^2.8.0",
     "extract-text-webpack-plugin": "^3.0.1",
     "flow-bin": "^0.66.0",
+    "jest": "^20.0.4",
+    "jest-styled-components": "^5.0.0",
+    "jsdom": "11.6.2",
+    "jsdom-global": "3.0.2",
     "npm-clean": "^1.0.3",
     "npm-run-all": "^4.1.2",
+    "raf": "^3.4.0",
     "react-loadable": "^5.3.1",
+    "react-test-renderer": "^16.2.0",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
@@ -69,5 +82,50 @@
     "react-transition-group": "^2.2.1",
     "reactstrap": "^5.0.0-beta.2",
     "styled-components": "^3.1.6"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/config/setupJestTests.js",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }

@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TransitionGroup && Transition Components Render custom component snapshot 1`] = `
+.c0 {
+  -webkit-transition: all 2000ms linear;
+  transition: all 2000ms linear;
+}
+
+.c0.fade-enter {
+  opacity: 0.01;
+}
+
+.c0.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit.fade-exit-active {
+  opacity: 0.01;
+}
+
+.c1 {
+  -webkit-transition: all 2000ms linear;
+  transition: all 2000ms linear;
+}
+
+.c1.zoom-enter {
+  opacity: 0.01;
+  -webkit-transform: scale3d(0.3,0.3,0.3);
+  -ms-transform: scale3d(0.3,0.3,0.3);
+  transform: scale3d(0.3,0.3,0.3);
+}
+
+.c1.zoom-enter.zoom-enter-active {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c1.zoom-exit {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c1.zoom-exit.zoom-exit-active {
+  opacity: 0.01;
+  -webkit-transform: scale3d(0.3,0.3,0.3);
+  -ms-transform: scale3d(0.3,0.3,0.3);
+  transform: scale3d(0.3,0.3,0.3);
+}
+
+.c2 {
+  -webkit-transition: all 2000ms linear;
+  transition: all 2000ms linear;
+}
+
+.c2.rotate-enter {
+  opacity: 0.01;
+  -webkit-transform: rotate3d(0,0,1,-200deg);
+  -ms-transform: rotate3d(0,0,1,-200deg);
+  transform: rotate3d(0,0,1,-200deg);
+}
+
+.c2.rotate-enter.rotate-enter-active {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c2.rotate-exit {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c2.rotate-exit.rotate-exit-active {
+  opacity: 0.01;
+  -webkit-transform: rotate3d(0,0,1,-200deg);
+  -ms-transform: rotate3d(0,0,1,-200deg);
+  transform: rotate3d(0,0,1,-200deg);
+}
+
+.c3 {
+  -webkit-transition: all 2000ms linear;
+  transition: all 2000ms linear;
+}
+
+.c3.roll-enter {
+  opacity: 0.01;
+  -webkit-transform: translate3d(100%,0,0) rotate3d(0,0,1,120deg);
+  -ms-transform: translate3d(100%,0,0) rotate3d(0,0,1,120deg);
+  transform: translate3d(100%,0,0) rotate3d(0,0,1,120deg);
+}
+
+.c3.roll-enter.roll-enter-active {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c3.roll-exit {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c3.roll-exit.roll-exit-active {
+  opacity: 0.01;
+  -webkit-transform: translate3d(100%,0,0) rotate3d(0,0,1,120deg);
+  -ms-transform: translate3d(100%,0,0) rotate3d(0,0,1,120deg);
+  transform: translate3d(100%,0,0) rotate3d(0,0,1,120deg);
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    0
+  </div>
+  <div
+    className="c1"
+  >
+    1
+  </div>
+  <div
+    className="c2"
+  >
+    2
+  </div>
+  <div
+    className="c3"
+  >
+    3
+  </div>
+</div>
+`;
+
+exports[`TransitionGroup && Transition Components Render default component snapshot 1`] = `
+.c0 {
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+.c0.fade-enter {
+  opacity: 0.01;
+}
+
+.c0.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit.fade-exit-active {
+  opacity: 0.01;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    0
+  </div>
+  <div
+    className="c0"
+  >
+    1
+  </div>
+  <div
+    className="c0"
+  >
+    2
+  </div>
+  <div
+    className="c0"
+  >
+    3
+  </div>
+</div>
+`;
