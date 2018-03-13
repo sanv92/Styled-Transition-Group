@@ -1,13 +1,13 @@
 {
   "name": "styled-transition-group-animation",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Generate animation width styled-components and react-transition-group's CSSTransition",
   "main": "dist/index.js",
   "scripts": {
     "build:storybook": "build-storybook -c .storybook -o ./public/storybook",
     "dev:storybook": "start-storybook -p 3006 -s ./src -c .storybook",
     "build": "babel -d dist src",
-    "test": "npm run test:jest && npm run test:eslint",
+    "test": "npm run test:jest --coverage && npm run test:eslint",
     "test:jest": "jest ./src",
     "test:jest:watch": "npm run test:jest -- --watch",
     "test:eslint": "eslint ./src",
