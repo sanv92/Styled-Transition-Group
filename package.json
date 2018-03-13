@@ -1,6 +1,6 @@
 {
   "name": "styled-transition-group-animation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Generate animation width styled-components and react-transition-group's CSSTransition",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "test": "npm run test:jest && npm run test:eslint",
     "test:jest": "jest ./src",
     "test:jest:watch": "npm run test:jest -- --watch",
-    "test:eslint": "eslint ./src"
+    "test:eslint": "eslint ./src",
+    "coverage": "NODE_ENV=test nyc report --reporter=text-lcov",
+    "report": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -85,8 +87,10 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupJestTests.js",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/transition.js"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"

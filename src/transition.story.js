@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from 'styled-components'
 import { storiesOf } from '@storybook/react'
-import { select } from '@storybook/addon-knobs/react'
+import { select, number } from '@storybook/addon-knobs/react'
 
 import { Alert, Button } from 'reactstrap'
 import { TodoList } from './utils/TodoList'
@@ -14,6 +14,7 @@ const stories = storiesOf('molecules/Transition', module)
 stories
   .add('Default', () => {
     const keys = Object.keys(transitionStyles).map((key) => (key))
+    const duration = 1000
 
     return (
       <React.Fragment>
@@ -23,7 +24,7 @@ stories
 
             <TransitionGroup style={{width: '100%', overflow: 'hidden'}}>
               {state.items.map((item, index) => (
-                <Transition key={item} type={select('type', keys, 'fade')} duration={1000}>
+                <Transition key={item} type={select('type', keys, 'fade')} duration={number('duration', duration, duration)}>
 
                   <div style={{marginBottom: '.5rem'}}>
                     <Alert color="success" style={{display: 'inline-block', width: '100%'}}>
@@ -55,6 +56,7 @@ stories
     `
 
     const keys = Object.keys(transitionStyles).map((key) => (key))
+    const duration = 1000
 
     return (
       <React.Fragment>
@@ -64,7 +66,7 @@ stories
 
             <TransitionGroup style={{width: '100%', overflow: 'hidden'}}>
               {state.items.map((item, index) => (
-                <Transition key={item} type={select('type', keys, 'fade')} duration={1000}>
+                <Transition key={item} type={select('type', keys, 'fade')} duration={number('duration', duration, duration)}>
 
                   <div style={{marginBottom: '.5rem'}}>
                     <Alert color="success" style={{display: 'inline-block', width: '100%'}}>
