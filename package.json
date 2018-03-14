@@ -8,10 +8,10 @@
     "dev:storybook": "start-storybook -p 3006 -s ./src -c .storybook",
     "build": "babel -d dist src",
     "test": "npm run test:jest && npm run test:eslint",
-    "test:jest": "jest ./src --coverage && cat ./coverage/lcov.info | coveralls",
+    "test:jest": "jest ./src --coverage",
     "test:jest:watch": "npm run test:jest -- --watch",
     "test:eslint": "eslint ./src",
-    "report": "nyc report --reporter=text-lcov | coveralls"
+    "report": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -88,7 +88,6 @@
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/config/setupJestTests.js",
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/transition.js"
     ],
