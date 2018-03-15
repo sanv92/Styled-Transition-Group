@@ -3,7 +3,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/SanderV1992/Styled-Transition-Group/badge.svg)](https://coveralls.io/github/SanderV1992/Styled-Transition-Group)
 
 Generate animation width styled-components and react-transition-group's CSSTransition
+
 For more information about the angular-translate project, please visit our [website](https://sanderv1992.github.io/Styled-Transition-Group).
+
 
 ## Install
 ```sh

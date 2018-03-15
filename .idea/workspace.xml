@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea1c827-fef9-4f4d-9e45-33acd29250fa" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -86,12 +87,12 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="525">
-                <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <first_editor relative-caret-position="119">
+                <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                 <folding>
-                  <marker date="1521095890528" expanded="true" signature="672:907" ph="&lt;TransitionGroup/&gt;" />
-                  <marker date="1521095890528" expanded="true" signature="736:880" ph="&lt;Transition/&gt;" />
-                  <marker date="1521095890528" expanded="true" signature="803:853" ph="&lt;div/&gt;" />
+                  <marker date="1521095961724" expanded="true" signature="674:909" ph="&lt;TransitionGroup/&gt;" />
+                  <marker date="1521095961724" expanded="true" signature="738:882" ph="&lt;Transition/&gt;" />
+                  <marker date="1521095961724" expanded="true" signature="805:855" ph="&lt;div/&gt;" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -320,12 +321,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520778982984</updated>
       <workItem from="1520778984255" duration="717000" />
-      <workItem from="1520779710705" duration="42819000" />
+      <workItem from="1520779710705" duration="42876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43536000" />
+    <option name="totallyTimeSpent" value="43593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="790" extended-state="0" />
@@ -812,12 +813,12 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="525">
-            <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <first_editor relative-caret-position="119">
+            <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
             <folding>
-              <marker date="1521095890528" expanded="true" signature="672:907" ph="&lt;TransitionGroup/&gt;" />
-              <marker date="1521095890528" expanded="true" signature="736:880" ph="&lt;Transition/&gt;" />
-              <marker date="1521095890528" expanded="true" signature="803:853" ph="&lt;div/&gt;" />
+              <marker date="1521095961724" expanded="true" signature="674:909" ph="&lt;TransitionGroup/&gt;" />
+              <marker date="1521095961724" expanded="true" signature="738:882" ph="&lt;Transition/&gt;" />
+              <marker date="1521095961724" expanded="true" signature="805:855" ph="&lt;div/&gt;" />
             </folding>
           </first_editor>
           <second_editor />
