@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea1c827-fef9-4f4d-9e45-33acd29250fa" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/transition.story.js" afterPath="$PROJECT_DIR$/src/transition.story.js" />
-      <change beforePath="$PROJECT_DIR$/src/transition.test.js" afterPath="$PROJECT_DIR$/src/transition.test.js" />
+      <change beforePath="$PROJECT_DIR$/public/storybook/iframe.html" afterPath="$PROJECT_DIR$/public/storybook/iframe.html" />
+      <change beforePath="$PROJECT_DIR$/public/storybook/static/preview.025a36dc7b84fb7ac286.bundle.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/src/transition.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="453">
-              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
                 <marker date="1521150454456" expanded="true" signature="626:855" ph="{...}" />
@@ -99,17 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/__snapshots__/transition.test.js.snap">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addons.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.storybook/addons.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,7 +111,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="582">
-                <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+                <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
                 <folding>
                   <marker date="1521150700579" expanded="true" signature="674:909" ph="&lt;TransitionGroup/&gt;" />
                   <marker date="1521150700579" expanded="true" signature="738:882" ph="&lt;Transition/&gt;" />
@@ -141,6 +132,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transition.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/transition.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -182,11 +193,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -306,17 +317,6 @@
               <item name="styled-transition-group" type="b2602c69:ProjectViewProjectNode" />
               <item name="styled-transition-group" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="styled-transition-group" type="b2602c69:ProjectViewProjectNode" />
-              <item name="styled-transition-group" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="styled-transition-group" type="b2602c69:ProjectViewProjectNode" />
-              <item name="styled-transition-group" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="__snapshots__" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -376,12 +376,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520778982984</updated>
       <workItem from="1520778984255" duration="717000" />
-      <workItem from="1520779710705" duration="54978000" />
+      <workItem from="1520779710705" duration="55535000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55695000" />
+    <option name="totallyTimeSpent" value="56252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="790" extended-state="0" />
@@ -649,14 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.storybook/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -669,14 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -838,7 +822,7 @@
     <entry file="file://$PROJECT_DIR$/src/__snapshots__/transition.test.js.snap">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -855,7 +839,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="582">
-            <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
             <folding>
               <marker date="1521150700579" expanded="true" signature="674:909" ph="&lt;TransitionGroup/&gt;" />
               <marker date="1521150700579" expanded="true" signature="738:882" ph="&lt;Transition/&gt;" />
@@ -870,10 +854,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/transition.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="81" column="72" lean-forward="false" selection-start-line="81" selection-start-column="72" selection-end-line="81" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1521151155206" expanded="true" signature="518:1901" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="549:1115" ph="..." />
+            <marker date="1521151155206" expanded="true" signature="615:700" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="715:797" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="813:892" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="908:966" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="982:1038" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1053:1107" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1150:1434" ph="..." />
+            <marker date="1521151155206" expanded="true" signature="1164:1221" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1250:1330" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1345:1426" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1458:1540" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1585:1666" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1690:1771" ph="{...}" />
+            <marker date="1521151155206" expanded="true" signature="1814:1896" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/transition.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
             <marker date="1521150454456" expanded="true" signature="626:855" ph="{...}" />
@@ -941,29 +951,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/transition.test.js">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="81" column="72" lean-forward="false" selection-start-line="81" selection-start-column="72" selection-end-line="81" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1521151155206" expanded="true" signature="518:1901" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="549:1115" ph="..." />
-            <marker date="1521151155206" expanded="true" signature="615:700" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="715:797" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="813:892" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="908:966" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="982:1038" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1053:1107" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1150:1434" ph="..." />
-            <marker date="1521151155206" expanded="true" signature="1164:1221" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1250:1330" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1345:1426" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1458:1540" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1585:1666" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1690:1771" ph="{...}" />
-            <marker date="1521151155206" expanded="true" signature="1814:1896" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/transition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
