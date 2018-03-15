@@ -6,14 +6,15 @@ import { select, number } from '@storybook/addon-knobs/react'
 import { Alert, Button } from 'reactstrap'
 import { TodoList } from './utils/TodoList'
 
-import { TransitionGroup, Transition, transitionStyles } from './transition'
+import { TransitionGroup, Transition } from './transition'
 
 
 const stories = storiesOf('molecules/Transition', module)
 
 stories
   .add('Default', () => {
-    const keys = Object.keys(transitionStyles).map((key) => (key))
+    const animations = ['fade', 'zoom', 'rotate', 'roll']
+    const keys = animations.map((key) => (key))
     const duration = 1000
 
     return (
@@ -48,14 +49,75 @@ stories
     )
   })
 
-
 stories
-  .add('Add new effects (test)', () => {
-    transitionStyles.test = css`
-      background-color: #000;
+  .add('Use custom animation', () => {
+    const animation = css`
+      @keyframes bounceInDown {
+        from,
+        60%,
+        75%,
+        90%,
+        to {
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+  
+        0% {
+          opacity: 0;
+          transform: translate3d(0, -3000px, 0);
+        }
+  
+        60% {
+          opacity: 1;
+          transform: translate3d(0, 25px, 0);
+        }
+  
+        75% {
+          transform: translate3d(0, -10px, 0);
+        }
+  
+        90% {
+          transform: translate3d(0, 5px, 0);
+        }
+  
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+  
+      @keyframes bounceOutDown {
+        20% {
+          transform: translate3d(0, 10px, 0);
+        }
+  
+        40%,
+        45% {
+          opacity: 1;
+          transform: translate3d(0, -20px, 0);
+        }
+  
+        to {
+          opacity: 0;
+          transform: translate3d(0, 2000px, 0);
+        }
+      }
+  
+     &.bounce-enter {
+        animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+      }
+  
+      &.bounce-enter.bounce-enter-active {
+        animation: bounceInDown ${(p) => p.duration}ms linear infinite;
+      }
+  
+      &.bounce-exit {
+        animation: bounceInDown ${(p) => p.duration}ms linear infinite;
+      }
+  
+      &.bounce-exit.bounce-exit-active {
+        animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+      }
     `
 
-    const keys = Object.keys(transitionStyles).map((key) => (key))
     const duration = 1000
 
     return (
@@ -66,7 +128,7 @@ stories
 
             <TransitionGroup style={{width: '100%', overflow: 'hidden'}}>
               {state.items.map((item, index) => (
-                <Transition key={item} type={select('type', keys, 'fade')} duration={number('duration', duration, duration)}>
+                <Transition key={item} type="bounce" animation={animation} duration={number('duration', duration, duration)}>
 
                   <div style={{marginBottom: '.5rem'}}>
                     <Alert color="success" style={{display: 'inline-block', width: '100%'}}>

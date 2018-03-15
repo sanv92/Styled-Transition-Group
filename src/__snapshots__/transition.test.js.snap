@@ -1,5 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TransitionGroup && Transition Components Add custom animation 1`] = `
+.c0 {
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+.c0.fade-enter {
+  opacity: 0.01;
+}
+
+.c0.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit.fade-exit-active {
+  opacity: 0.01;
+}
+
+.c0.bounce-enter {
+  -webkit-animation: bounceOutDown 1000ms linear infinite;
+  animation: bounceOutDown 1000ms linear infinite;
+}
+
+.c0.bounce-enter.bounce-enter-active {
+  -webkit-animation: bounceInDown 1000ms linear infinite;
+  animation: bounceInDown 1000ms linear infinite;
+}
+
+.c0.bounce-exit {
+  -webkit-animation: bounceInDown 1000ms linear infinite;
+  animation: bounceInDown 1000ms linear infinite;
+}
+
+.c0.bounce-exit.bounce-exit-active {
+  -webkit-animation: bounceOutDown 1000ms linear infinite;
+  animation: bounceOutDown 1000ms linear infinite;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    0
+  </div>
+  <div
+    className="c0"
+  >
+    1
+  </div>
+  <div
+    className="c0"
+  >
+    2
+  </div>
+  <div
+    className="c0"
+  >
+    3
+  </div>
+</div>
+`;
+
 exports[`TransitionGroup && Transition Components Render custom component snapshot 1`] = `
 .c0 {
   -webkit-transition: all 2000ms linear;

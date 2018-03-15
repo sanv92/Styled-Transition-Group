@@ -35,9 +35,46 @@ npm install styled-transition-group-animation -S
 
 * Type: `String`
 * Default: `fade`
+* Available types: `fade, zoom, rotate, roll`
 
 ### duration
 
 * Type: `Number`
 * Default: `1000`
 
+### animation
+* Type: `Any`
+* Default: `null`
+
+### Add more animation types (you can add more animations manually):
+```js
+const animation = css`
+ &.bounce-enter {
+    animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+  }
+
+  &.bounce-enter.bounce-enter-active {
+    animation: bounceInDown ${(p) => p.duration}ms linear infinite;
+  }
+
+  &.bounce-exit {
+    animation: bounceInDown ${(p) => p.duration}ms linear infinite;
+  }
+
+  &.bounce-exit.bounce-exit-active {
+    animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+  }
+`
+
+<TransitionGroup>
+    {this.props.items.map((item) => (
+        <Transition key={item} type="bounce" animation={animation} duration={1000}>
+
+          <div>
+            <h6>{item}</h6>
+          </div>
+
+        </Transition>
+    ))}
+</TransitionGroup>
+```

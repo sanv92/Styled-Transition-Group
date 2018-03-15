@@ -8,6 +8,7 @@ import { TransitionGroup as ReactTransitionGroup, CSSTransition as ReactCSSTrans
 const defaultProps = {
   type: 'fade',
   duration: 1000,
+  animation: null,
 }
 
 const propTypes = {
@@ -16,11 +17,12 @@ const propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  type: PropTypes.oneOf(['fade', 'zoom', 'rotate', 'roll']),
+  type: PropTypes.string,
   duration: PropTypes.number,
+  animation: PropTypes.arrayOf(PropTypes.any),
 }
 
-export const transitionStyles = {
+const transitionStyles = {
   fade: css`
     &.fade-enter {
       opacity: 0.01;
@@ -39,7 +41,7 @@ export const transitionStyles = {
     }
   `,
   zoom: css`
-   &.zoom-enter {
+    &.zoom-enter {
       opacity: 0.01;
       transform: scale3d(0.3, 0.3, 0.3);
     }
@@ -103,7 +105,7 @@ export const transitionStyles = {
   `,
 }
 
-const TransitionConstructor = ({ children, className, type, duration, ...props }) => (
+const TransitionConstructor = ({ children, className, type, duration, animation, ...props }) => (
   <ReactCSSTransition
     {...props}
     timeout={duration}
@@ -125,6 +127,10 @@ export const Transition = styled(TransitionConstructor)`
   ${(p) => transitionStyles[p.type] && css`
     ${transitionStyles[p.type]}
   `}
+
+  ${(p) => p.animation && css`
+    ${p.animation}
+ `}
 `
 
 Transition.defaultProps = defaultProps
