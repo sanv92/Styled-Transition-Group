@@ -102,7 +102,7 @@ stories
       }
   
      &.bounce-enter {
-        animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+        animation: bounceOutDown ${(p) => p.duration}ms linear infinite;
       }
   
       &.bounce-enter.bounce-enter-active {
@@ -114,7 +114,7 @@ stories
       }
   
       &.bounce-exit.bounce-exit-active {
-        animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+        animation: bounceOutDown ${(p) => p.duration}ms linear infinite;
       }
     `
 

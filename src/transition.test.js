@@ -67,7 +67,7 @@ describe('TransitionGroup && Transition Components', () => {
       }
   
      &.bounce-enter {
-        animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+        animation: bounceOutDown ${(p) => p.duration}ms linear infinite;
       }
   
       &.bounce-enter.bounce-enter-active {
@@ -79,7 +79,7 @@ describe('TransitionGroup && Transition Components', () => {
       }
   
       &.bounce-exit.bounce-exit-active {
-        animation: bounceOutDown ${(p) => p.duration}ms linear infinite
+        animation: bounceOutDown ${(p) => p.duration}ms linear infinite;
       }
     `
 
