@@ -21,7 +21,17 @@ module.exports = {
   },
 
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.story.js$/,
+        enforce: 'pre',
+        loaders: [
+          {
+            loader: require.resolve('@storybook/addon-storysource/loader'),
+          },
+        ],
+      },
+    ],
   },
 
   plugins: [
