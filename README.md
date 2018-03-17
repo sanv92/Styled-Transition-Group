@@ -47,24 +47,84 @@ npm install styled-transition-group-animation -S
 * Default: `null`
 
 ### Add more animation types (you can add more animations manually):
+
+#### Transform
 ```js
-const animation = css`
- &.bounce-enter {
-    animation: bounceOutDown ${(p) => p.duration}ms linear infinite
-  }
+const animation = {
+  enter: {
+    from: 'scale3d(0.3, 0.3, 0.3)',
+    to: 'scale3d(2, 2, 2)',
+  },
+  exit: {
+    from: 'initial',
+    to: 'scale3d(0.3, 0.3, 0.3)',
+  },
+}
 
-  &.bounce-enter.bounce-enter-active {
-    animation: bounceInDown ${(p) => p.duration}ms linear infinite;
-  }
+<TransitionGroup>
+    {this.props.items.map((item) => (
+        <Transition key={item} type="bounce" animation={animation} duration={1000}>
 
-  &.bounce-exit {
-    animation: bounceInDown ${(p) => p.duration}ms linear infinite;
-  }
+          <div>
+            <h6>{item}</h6>
+          </div>
 
-  &.bounce-exit.bounce-exit-active {
-    animation: bounceOutDown ${(p) => p.duration}ms linear infinite
-  }
-`
+        </Transition>
+    ))}
+</TransitionGroup>
+```
+
+#### Keyframes
+```js
+const animation = {
+  keyframes: `
+      @keyframes bounceInDown {
+        from, 60%, 75%, 90%, to {
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        0% {
+          opacity: 0;
+          transform: translate3d(0, -3000px, 0);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translate3d(0, 25px, 0);
+        }
+
+        75% {
+          transform: translate3d(0, -10px, 0);
+        }
+
+        90% {
+          transform: translate3d(0, 5px, 0);
+        }
+
+        to {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      @keyframes bounceOutDown {
+        20% {
+          transform: translate3d(0, 10px, 0);
+        }
+
+        40%, 45% {
+          opacity: 1;
+          transform: translate3d(0, -20px, 0);
+        }
+
+        to {
+          opacity: 0;
+          transform: translate3d(0, 2000px, 0);
+        }
+      }
+    `,
+  enter: 'bounceInDown',
+  exit: 'bounceOutDown',
+}
 
 <TransitionGroup>
     {this.props.items.map((item) => (

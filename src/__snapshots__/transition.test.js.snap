@@ -1,72 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TransitionGroup && Transition Components Add custom animation 1`] = `
-.c0 {
-  -webkit-transition: all 1000ms linear;
-  transition: all 1000ms linear;
-}
-
-.c0.fade-enter {
-  opacity: 0.01;
-}
-
-.c0.fade-enter.fade-enter-active {
-  opacity: 1;
-}
-
-.c0.fade-exit {
-  opacity: 1;
-}
-
-.c0.fade-exit.fade-exit-active {
-  opacity: 0.01;
-}
-
-.c0.bounce-enter {
-  -webkit-animation: bounceOutDown 1000ms linear infinite;
-  animation: bounceOutDown 1000ms linear infinite;
-}
-
-.c0.bounce-enter.bounce-enter-active {
-  -webkit-animation: bounceInDown 1000ms linear infinite;
-  animation: bounceInDown 1000ms linear infinite;
-}
-
-.c0.bounce-exit {
-  -webkit-animation: bounceInDown 1000ms linear infinite;
-  animation: bounceInDown 1000ms linear infinite;
-}
-
-.c0.bounce-exit.bounce-exit-active {
-  -webkit-animation: bounceOutDown 1000ms linear infinite;
-  animation: bounceOutDown 1000ms linear infinite;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    0
-  </div>
-  <div
-    className="c0"
-  >
-    1
-  </div>
-  <div
-    className="c0"
-  >
-    2
-  </div>
-  <div
-    className="c0"
-  >
-    3
-  </div>
-</div>
-`;
-
-exports[`TransitionGroup && Transition Components Render custom component snapshot 1`] = `
+exports[`TransitionGroup && Transition Components Snapshot (Component) 1`] = `
 .c0 {
   -webkit-transition: all 2000ms linear;
   transition: all 2000ms linear;
@@ -189,21 +123,25 @@ exports[`TransitionGroup && Transition Components Render custom component snapsh
 
 <div>
   <div
+    animation={null}
     className="c0"
   >
     0
   </div>
   <div
+    animation={null}
     className="c1"
   >
     1
   </div>
   <div
+    animation={null}
     className="c2"
   >
     2
   </div>
   <div
+    animation={null}
     className="c3"
   >
     3
@@ -211,7 +149,7 @@ exports[`TransitionGroup && Transition Components Render custom component snapsh
 </div>
 `;
 
-exports[`TransitionGroup && Transition Components Render default component snapshot 1`] = `
+exports[`TransitionGroup && Transition Components Snapshot (ComponentDefault) 1`] = `
 .c0 {
   -webkit-transition: all 1000ms linear;
   transition: all 1000ms linear;
@@ -235,21 +173,407 @@ exports[`TransitionGroup && Transition Components Render default component snaps
 
 <div>
   <div
+    animation={null}
     className="c0"
   >
     0
   </div>
   <div
+    animation={null}
     className="c0"
   >
     1
   </div>
   <div
+    animation={null}
     className="c0"
   >
     2
   </div>
   <div
+    animation={null}
+    className="c0"
+  >
+    3
+  </div>
+</div>
+`;
+
+exports[`TransitionGroup && Transition Components Snapshot (ComponentKeyframes) 1`] = `
+.c0 {
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+.c0.fade-enter {
+  opacity: 0.01;
+}
+
+.c0.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit.fade-exit-active {
+  opacity: 0.01;
+}
+
+.c0.fade-enter.fade-enter-active {
+  -webkit-animation: bounceInDown 1000ms linear;
+  animation: bounceInDown 1000ms linear;
+}
+
+.c0.fade-exit.fade-exit-active {
+  -webkit-animation: bounceOutDown 1000ms linear;
+  animation: bounceOutDown 1000ms linear;
+}
+
+<div>
+  <div
+    animation={
+      Object {
+        "enter": "bounceInDown",
+        "exit": "bounceOutDown",
+        "keyframes": "
+            @keyframes bounceInDown {
+              from, 60%, 75%, 90%, to {
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+              }
+      
+              0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0);
+              }
+      
+              60% {
+                opacity: 1;
+                transform: translate3d(0, 25px, 0);
+              }
+      
+              75% {
+                transform: translate3d(0, -10px, 0);
+              }
+      
+              90% {
+                transform: translate3d(0, 5px, 0);
+              }
+      
+              to {
+                transform: translate3d(0, 0, 0);
+              }
+            }
+      
+            @keyframes bounceOutDown {
+              20% {
+                transform: translate3d(0, 10px, 0);
+              }
+      
+              40%, 45% {
+                opacity: 1;
+                transform: translate3d(0, -20px, 0);
+              }
+      
+              to {
+                opacity: 0;
+                transform: translate3d(0, 2000px, 0);
+              }
+            }
+          ",
+      }
+    }
+    className="c0"
+  >
+    0
+  </div>
+  <div
+    animation={
+      Object {
+        "enter": "bounceInDown",
+        "exit": "bounceOutDown",
+        "keyframes": "
+            @keyframes bounceInDown {
+              from, 60%, 75%, 90%, to {
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+              }
+      
+              0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0);
+              }
+      
+              60% {
+                opacity: 1;
+                transform: translate3d(0, 25px, 0);
+              }
+      
+              75% {
+                transform: translate3d(0, -10px, 0);
+              }
+      
+              90% {
+                transform: translate3d(0, 5px, 0);
+              }
+      
+              to {
+                transform: translate3d(0, 0, 0);
+              }
+            }
+      
+            @keyframes bounceOutDown {
+              20% {
+                transform: translate3d(0, 10px, 0);
+              }
+      
+              40%, 45% {
+                opacity: 1;
+                transform: translate3d(0, -20px, 0);
+              }
+      
+              to {
+                opacity: 0;
+                transform: translate3d(0, 2000px, 0);
+              }
+            }
+          ",
+      }
+    }
+    className="c0"
+  >
+    1
+  </div>
+  <div
+    animation={
+      Object {
+        "enter": "bounceInDown",
+        "exit": "bounceOutDown",
+        "keyframes": "
+            @keyframes bounceInDown {
+              from, 60%, 75%, 90%, to {
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+              }
+      
+              0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0);
+              }
+      
+              60% {
+                opacity: 1;
+                transform: translate3d(0, 25px, 0);
+              }
+      
+              75% {
+                transform: translate3d(0, -10px, 0);
+              }
+      
+              90% {
+                transform: translate3d(0, 5px, 0);
+              }
+      
+              to {
+                transform: translate3d(0, 0, 0);
+              }
+            }
+      
+            @keyframes bounceOutDown {
+              20% {
+                transform: translate3d(0, 10px, 0);
+              }
+      
+              40%, 45% {
+                opacity: 1;
+                transform: translate3d(0, -20px, 0);
+              }
+      
+              to {
+                opacity: 0;
+                transform: translate3d(0, 2000px, 0);
+              }
+            }
+          ",
+      }
+    }
+    className="c0"
+  >
+    2
+  </div>
+  <div
+    animation={
+      Object {
+        "enter": "bounceInDown",
+        "exit": "bounceOutDown",
+        "keyframes": "
+            @keyframes bounceInDown {
+              from, 60%, 75%, 90%, to {
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+              }
+      
+              0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0);
+              }
+      
+              60% {
+                opacity: 1;
+                transform: translate3d(0, 25px, 0);
+              }
+      
+              75% {
+                transform: translate3d(0, -10px, 0);
+              }
+      
+              90% {
+                transform: translate3d(0, 5px, 0);
+              }
+      
+              to {
+                transform: translate3d(0, 0, 0);
+              }
+            }
+      
+            @keyframes bounceOutDown {
+              20% {
+                transform: translate3d(0, 10px, 0);
+              }
+      
+              40%, 45% {
+                opacity: 1;
+                transform: translate3d(0, -20px, 0);
+              }
+      
+              to {
+                opacity: 0;
+                transform: translate3d(0, 2000px, 0);
+              }
+            }
+          ",
+      }
+    }
+    className="c0"
+  >
+    3
+  </div>
+</div>
+`;
+
+exports[`TransitionGroup && Transition Components Snapshot (ComponentTransform) 1`] = `
+.c0 {
+  -webkit-transition: all 1000ms linear;
+  transition: all 1000ms linear;
+}
+
+.c0.fade-enter {
+  opacity: 0.01;
+}
+
+.c0.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.c0.fade-exit {
+  opacity: 1;
+}
+
+.c0.fade-exit.fade-exit-active {
+  opacity: 0.01;
+}
+
+.c0.fade-enter {
+  opacity: 0.01;
+  -webkit-transform: scale3d(0.3,0.3,0.3);
+  -ms-transform: scale3d(0.3,0.3,0.3);
+  transform: scale3d(0.3,0.3,0.3);
+}
+
+.c0.fade-enter.fade-enter-active {
+  opacity: 1;
+  -webkit-transform: scale3d(2,2,2);
+  -ms-transform: scale3d(2,2,2);
+  transform: scale3d(2,2,2);
+}
+
+.c0.fade-exit {
+  opacity: 1;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c0.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  -webkit-transform: scale3d(0.3,0.3,0.3);
+  -ms-transform: scale3d(0.3,0.3,0.3);
+  transform: scale3d(0.3,0.3,0.3);
+}
+
+<div>
+  <div
+    animation={
+      Object {
+        "enter": Object {
+          "from": "scale3d(0.3, 0.3, 0.3)",
+          "to": "scale3d(2, 2, 2)",
+        },
+        "exit": Object {
+          "from": "initial",
+          "to": "scale3d(0.3, 0.3, 0.3)",
+        },
+      }
+    }
+    className="c0"
+  >
+    0
+  </div>
+  <div
+    animation={
+      Object {
+        "enter": Object {
+          "from": "scale3d(0.3, 0.3, 0.3)",
+          "to": "scale3d(2, 2, 2)",
+        },
+        "exit": Object {
+          "from": "initial",
+          "to": "scale3d(0.3, 0.3, 0.3)",
+        },
+      }
+    }
+    className="c0"
+  >
+    1
+  </div>
+  <div
+    animation={
+      Object {
+        "enter": Object {
+          "from": "scale3d(0.3, 0.3, 0.3)",
+          "to": "scale3d(2, 2, 2)",
+        },
+        "exit": Object {
+          "from": "initial",
+          "to": "scale3d(0.3, 0.3, 0.3)",
+        },
+      }
+    }
+    className="c0"
+  >
+    2
+  </div>
+  <div
+    animation={
+      Object {
+        "enter": Object {
+          "from": "scale3d(0.3, 0.3, 0.3)",
+          "to": "scale3d(2, 2, 2)",
+        },
+        "exit": Object {
+          "from": "initial",
+          "to": "scale3d(0.3, 0.3, 0.3)",
+        },
+      }
+    }
     className="c0"
   >
     3

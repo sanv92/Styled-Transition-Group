@@ -5,23 +5,6 @@ import styled, { css } from 'styled-components'
 import { TransitionGroup as ReactTransitionGroup, CSSTransition as ReactCSSTransition } from 'react-transition-group'
 
 
-const defaultProps = {
-  type: 'fade',
-  duration: 1000,
-  animation: null,
-}
-
-const propTypes = {
-  className: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-  type: PropTypes.string,
-  duration: PropTypes.number,
-  animation: PropTypes.arrayOf(PropTypes.any),
-}
-
 const transitionStyles = {
   fade: css`
     &.fade-enter {
@@ -105,7 +88,41 @@ const transitionStyles = {
   `,
 }
 
-const TransitionConstructor = ({ children, className, type, duration, animation, ...props }) => (
+const transitionTransformTemplate = css`
+  &.${(p) => p.type}-enter {
+    opacity: 0.01;
+    transform: ${(p) => p.animation.enter.from};
+  }
+  
+  &.${(p) => p.type}-enter.${(p) => p.type}-enter-active {
+    opacity: 1;
+    transform: ${(p) => p.animation.enter.to};
+  }
+  
+  &.${(p) => p.type}-exit {
+    opacity: 1;
+    transform: ${(p) => p.animation.exit.from};
+  }
+  
+  &.${(p) => p.type}-exit.${(p) => p.type}-exit-active {
+    opacity: 0.01;
+    transform: ${(p) => p.animation.exit.to};
+  }
+`
+
+const transitionKeyframesTemplate = css`
+  ${(p) => p.animation.keyframes}
+
+  &.${(p) => p.type}-enter.${(p) => p.type}-enter-active {
+    animation: ${(p) => p.animation.enter} ${(p) => p.duration}ms linear;
+  }
+
+  &.${(p) => p.type}-exit.${(p) => p.type}-exit-active {
+    animation: ${(p) => p.animation.exit} ${(p) => p.duration}ms linear;
+  }
+`
+
+const TransitionConstructor = ({ children, className, type, duration, ...props }) => (
   <ReactCSSTransition
     {...props}
     timeout={duration}
@@ -116,11 +133,27 @@ const TransitionConstructor = ({ children, className, type, duration, animation,
   </ReactCSSTransition>
 )
 
-TransitionConstructor.defaultProps = defaultProps
-TransitionConstructor.propTypes = propTypes
+TransitionConstructor.defaultProps = {
+  type: 'fade',
+  duration: 1000,
+  animation: null,
+}
+
+TransitionConstructor.propTypes = {
+  className: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+  type: PropTypes.string,
+  duration: PropTypes.number,
+  animation: PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ])),
+}
 
 export const TransitionGroup = ReactTransitionGroup
-
 export const Transition = styled(TransitionConstructor)`
   transition: all ${(p) => p.duration}ms linear;
 
@@ -128,9 +161,19 @@ export const Transition = styled(TransitionConstructor)`
     ${transitionStyles[p.type]}
   `}
 
-  ${(p) => p.animation && css`
-    ${p.animation}
+  /** transform */
+  ${(p) => p.animation && !p.animation.keyframes && css`
+    ${transitionTransformTemplate}
  `}
+  
+  /** keyframes */
+  ${(p) => p.animation && p.animation.keyframes && css`
+    ${transitionKeyframesTemplate}
+  `}
 `
 
-Transition.defaultProps = defaultProps
+Transition.defaultProps = {
+  type: 'fade',
+  duration: 1000,
+  animation: null,
+}
