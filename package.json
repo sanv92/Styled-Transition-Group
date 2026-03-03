@@ -32,7 +32,7 @@
     "@atomix/eslint-config-react": "^6.1.1",
     "@storybook/addon-knobs": "^3.3.15",
     "@storybook/addon-storysource": "^3.4.0-alpha.8",
-    "@storybook/react": "^3.3.15",
+    "@storybook/react": "^10.2.14",
     "assets-webpack-plugin": "^3.5.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
